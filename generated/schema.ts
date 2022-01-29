@@ -93,6 +93,40 @@ export class Receipt extends Entity {
       this.set("data", Value.fromString(<string>value));
     }
   }
+
+  get functionName(): string | null {
+    let value = this.get("functionName");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toString();
+    }
+  }
+
+  set functionName(value: string | null) {
+    if (!value) {
+      this.unset("functionName");
+    } else {
+      this.set("functionName", Value.fromString(<string>value));
+    }
+  }
+
+  get timestamp(): BigInt | null {
+    let value = this.get("timestamp");
+    if (!value || value.kind == ValueKind.NULL) {
+      return null;
+    } else {
+      return value.toBigInt();
+    }
+  }
+
+  set timestamp(value: BigInt | null) {
+    if (!value) {
+      this.unset("timestamp");
+    } else {
+      this.set("timestamp", Value.fromBigInt(<BigInt>value));
+    }
+  }
 }
 
 export class ExecutionOutcome extends Entity {

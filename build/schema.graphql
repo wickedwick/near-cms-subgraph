@@ -3,6 +3,8 @@ type Receipt @entity {
   kind: String
   signerId: String
   data: String
+  functionName: String
+  timestamp: BigInt
 }
 
 type ExecutionOutcome @entity {
