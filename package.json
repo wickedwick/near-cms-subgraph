@@ -1,0 +1,27 @@
+{
+  "name": "near-cms-subgraph",
+  "version": "1.0.0",
+  "description": "Near indexing via The Graph",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "codegen": "graph codegen"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wickedwick/near-cms-subgraph.git"
+  },
+  "author": "Travis Wickham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wickedwick/near-cms-subgraph/issues"
+  },
+  "homepage": "https://github.com/wickedwick/near-cms-subgraph#readme",
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.26.0",
+    "@graphprotocol/graph-ts": "^0.24.1"
+  },
+  "dependencies": {
+    "json-as": "^0.2.6"
+  }
+}

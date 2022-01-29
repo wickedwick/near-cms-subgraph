@@ -1,0 +1,12 @@
+type Receipt @entity {
+  id: ID!
+  kind: String
+  signerId: String
+  data: String
+}
+
+type ExecutionOutcome @entity {
+  id: ID!
+  blockHash: String
+  status: String
+}
